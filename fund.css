@@ -1,0 +1,112 @@
+/* Root Colors */
+:root {
+  --primary-color: #1a3a6c;
+  --accent-color: #e63946;
+  --light-bg: #f8f9fa;
+  --dark-text: #212529;
+  --link-color: #007bff;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f7;
+   
+  color: var(--dark-text);
+  background-image: url(Screenshot_20250713-104623.jpg);
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Info Panel Container */
+.info-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headings */
+.info-panel h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.info-panel h3 {
+  color: var(--accent-color);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+/* Paragraphs and Lists */
+.info-panel p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.info-panel ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.info-panel li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Button */
+.info-panel .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.info-panel .btn i {
+  margin-right: 8px;
+}
+
+.info-panel .btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-panel {
+    padding: 20px;
+  }
+
+  .info-panel h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-panel h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-panel .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
